@@ -9,6 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
+
 WooCommerce AJAX Cart plugin is a WordPress Plugin that changes the default behavior of WooCommerte Cart Page, allowing a buyer to see the Total price calculation when change the Quantity of a product, without need to manually click on "Update cart" button.
 
 This improves the user experience and commodity when purchasing a product. No other hacks/code/theme changes is needed, this functionality is added when the plugin is activated.
@@ -16,9 +17,14 @@ This improves the user experience and commodity when purchasing a product. No ot
 Demonstration url: http://ragob.com/wooajaxcart/ (follow the green instructions)
 
 == Installation ==
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+
+1. Upload `pwoocommerce-ajax-cart.zip` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Done. This plugin no requires configuration to work
+3. Done. This plugin no requires extra configurations to work
+
+== Screenshots ==
+
+1. When user clicks on "+" or "-" of Quantity field, an AJAX request was made to update the prices
 
 == Changelog ==
 
@@ -28,6 +34,3 @@ Demonstration url: http://ragob.com/wooajaxcart/ (follow the green instructions)
 == Frequently Asked Questions ==
 
 == Upgrade Notice == 
-
-== Screenshots ==
-1. When user clicks on "+" or "-" of Quantity field, an AJAX request was made to update the prices
