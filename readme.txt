@@ -24,7 +24,7 @@ Demonstration url: http://ragob.com/wooajaxcart/ (follow the green instructions)
 
 == Screenshots ==
 
-1. When user clicks on "+" or "-" of Quantity field, an AJAX request was made to update the prices
+1. When user clicks on "+" or "-" of Quantity field, an AJAX request was made to update the prices.
 
 == Changelog ==
 
