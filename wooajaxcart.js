@@ -21,8 +21,21 @@ jQuery(document).ready(function($){
         $.post( form.attr('action'), formData, function(resp) {
                 // ajax response
                 $('.cart-collaterals').html(resp.html);
-                
-                el_qty.closest('.cart_item').find('.product-subtotal').html(resp.price);
+                if( el_qty.val() == 0 ){                    
+                    if( resp.cart_contents_count>0 ){
+                        el_qty.closest('.cart_item').fadeOut('slow');
+                    }
+                    else{
+                        $.get( resp.cart_link,function(data){
+                            var woo_container=el_qty.closest('.woocommerce');
+                            var new_content=$(data).find('.woocommerce').eq(0);
+                            woo_container.html(new_content.html());
+                        } );
+                    }
+
+                } else {
+                    el_qty.closest('.cart_item').find('.product-subtotal').html(resp.price);                
+                }
                 
                 $('#update_cart').remove();
                 $('#is_wac_ajax').remove();
