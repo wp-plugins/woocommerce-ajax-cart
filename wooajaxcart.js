@@ -46,4 +46,13 @@ jQuery(document).ready(function($){
             'json'
         );
     });
+    $( '.qty' ).bind('keypress', function(e){
+        if( e.keyCode == 13 ){
+            e.preventDefault();
+            $(this).trigger('change');
+        }
+        else if(e.keyCode != 8 && e.keyCode != 46 && isNaN(String.fromCharCode(e.keyCode))){
+           e.preventDefault();
+       }
+    });
 });
