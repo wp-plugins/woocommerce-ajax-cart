@@ -51,7 +51,7 @@ jQuery(document).ready(function($){
             e.preventDefault();
             $(this).trigger('change');
         }
-        else if(e.keyCode != 8 && e.keyCode != 46 && isNaN(String.fromCharCode(e.keyCode))){
+        else if(e.keyCode != 8 && e.keyCode != 46 && isNaN(String.fromCharCode(e.which))){
            e.preventDefault();
        }
     });
