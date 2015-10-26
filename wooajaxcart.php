@@ -61,6 +61,8 @@ function wac_update() {
                 $_product = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
                 $price = apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
                 $resp['price'] = $price;
+                $resp['cart_contents_count']=WC()->cart->get_cart_contents_count();
+                $resp['cart_link']=WC()->cart->get_cart_url();
             }
         }
 
